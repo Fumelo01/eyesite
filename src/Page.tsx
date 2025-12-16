@@ -2,9 +2,9 @@ import Head from "./Head";
 import Footer from "./Footer";
 import { services } from "./lib/data";
 import { ArrowRight } from "lucide-react";
-
-
-
+import Layout from "./layout";
+import { AppSidebar } from "@/components/app-sidebar"
+import { SidebarProvider } from "@/components/ui/sidebar"
 
 
 
@@ -12,6 +12,10 @@ export default function Page () {
 
   return <><div>
     <Head/>
+    <SidebarProvider>
+      <AppSidebar/>
+    </SidebarProvider>
+    
     <main className="flex-1">
       {/* Services Preview Section */}
       <section>
