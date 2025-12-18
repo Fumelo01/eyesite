@@ -1,7 +1,7 @@
-import Layout from "./layout";
+// import Layout from "./layout";
 //import { useSidebar } from "@/components/ui/sidebar"
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/app-sidebar"
+// import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+// import { AppSidebar } from "@/components/app-sidebar"
 
 
 
@@ -16,11 +16,6 @@ export default function name() {
         <span>Eyesite</span>
       </div>
       <div >
-        <SidebarProvider>
-          <main>
-            <SidebarTrigger />
-          </main>
-        </SidebarProvider>
         <i className="hover:bg-teal-600 rounded-md p-2 fa-solid fa-bars" ></i>
       </div>
     </div>

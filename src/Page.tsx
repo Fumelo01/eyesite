@@ -2,17 +2,18 @@ import Head from "./Head";
 import Footer from "./Footer";
 import { services } from "./lib/data";
 import { ArrowRight } from "lucide-react";
-import Layout from "./layout";
+// import Layout from "./layout";
 import { AppSidebar } from "@/components/app-sidebar"
 import { SidebarProvider } from "@/components/ui/sidebar"
-
+import React from "react";
 
 
 export default function Page () {
+  const [open, setOpen] = React.useState(false)
 
   return <><div>
     <Head/>
-    <SidebarProvider>
+    <SidebarProvider open={open} onOpenChange={setOpen}>
       <AppSidebar/>
     </SidebarProvider>
     
