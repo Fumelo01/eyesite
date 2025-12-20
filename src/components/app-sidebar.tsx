@@ -44,8 +44,8 @@ export function AppSidebar() {
   return (
     <div className="">
 
-      <Sidebar variant="sidebar" className="">
-        <SidebarContent>
+      <Sidebar variant="inset" className="inset-y-auto">
+        <SidebarContent className="">
           <SidebarGroup>
             <SidebarGroupLabel>Application</SidebarGroupLabel>
             <SidebarGroupContent>

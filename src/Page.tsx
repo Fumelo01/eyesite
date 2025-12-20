@@ -11,7 +11,7 @@ export default function Page () {
   
 
   return <><div className="">
-    <header className="sticky p-10 z-10 bg-cyan-600">hdu</header>
+    <Head/>
     <div className="flex bg-amber-0">
         <SidebarProvider>
         
